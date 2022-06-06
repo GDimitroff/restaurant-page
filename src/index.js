@@ -1,4 +1,5 @@
 import { print } from './print';
+import './main.css';
 
 function component() {
   print();
