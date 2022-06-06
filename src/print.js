@@ -1,5 +1,3 @@
-const print = () => {
+export const print = () => {
   console.log('Working!');
 };
-
-export default print;

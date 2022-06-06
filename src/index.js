@@ -1,4 +1,4 @@
-import print from './print';
+import { print } from './print';
 
 function component() {
   print();
