@@ -4,7 +4,7 @@ function createHeader() {
 
   const restaurantName = document.createElement('h1');
   restaurantName.classList.add('restaurant-name');
-  restaurantName.textContent = 'Karamba!';
+  restaurantName.textContent = 'HEADER!';
 
   header.appendChild(restaurantName);
 
