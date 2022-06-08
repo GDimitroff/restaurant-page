@@ -1,17 +1,18 @@
-import { print } from './print';
 import './main.css';
+import createHeader from './components/header';
+import createHome from './modules/home';
 
-function component() {
-  print();
-
-  const div = document.createElement('div');
-  const p = document.createElement('p');
-  p.textContent = "It's working!";
-
-  div.appendChild(p);
-  div.classList.add('red');
-
-  return div;
+function init() {
+  const body = document.querySelector('body');
+  const header = createHeader();
+  
+  const main = document.createElement('main');
+  main.classList.add('content');
+  const homePage = createHome();
+  main.appendChild(homePage);
+  
+  body.appendChild(header);
+  body.appendChild(main);
 }
 
-document.body.appendChild(component());
+init();
