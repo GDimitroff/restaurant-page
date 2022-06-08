@@ -1,3 +1,12 @@
 body {
   background: purple;
 }
+
+header {
+  color: red;
+}
+
+.test {
+  display: flex;
+  font-size: 1.8rem;
+}
