@@ -1,6 +1,6 @@
 :root {
   --primary-light: #f1f5f9;
-  --primary-dark: #1e293b;
+  --primary-dark: #111827;
   --primary-gold: #c59d5f;
 }
 
@@ -15,8 +15,6 @@
 html {
   font-size: 62.5%;
 }
-
-/* font-family: 'Herr Von Muellerhoff', cursive; */
 
 body {
   min-height: 100vh;
@@ -65,6 +63,70 @@ li > a:active {
   border-bottom: 3px solid var(--primary-gold);
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+  background: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.7)),
+    url('./assets/imgs/olympen-content.jpg');
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: var(--primary-dark);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home > p:first-of-type {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  color: var(--primary-gold);
+  font-size: 9.6rem;
+  text-transform: capitalize;
+}
+
+.home > h1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  margin-top: -7.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-light);
+}
+
+hr {
+  width: 50%;
+  border: 2px solid #c59d5f;
+  margin: 24px auto;
+}
+
+.home > p:last-of-type {
+  color: var(--primary-light);
+  text-align: center;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 1.6rem 2.8rem;
+  background: var(--primary-gold);
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover,
+button:active {
+  color: var(--primary-light);
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -77,7 +139,7 @@ footer {
 
 footer a:link,
 footer a:visited {
-  text-decoration: none;
+  text-decoration: transparent;
   color: var(--primary-gold);
   transition: 0.2s ease-in-out;
 }
