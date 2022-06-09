@@ -1,11 +1,16 @@
 function createFooter() {
   const footer = document.createElement('footer');
-  footer.classList.add('footer');
 
-  const div = document.createElement('div');
-  div.textContent = 'FOOTER!';
+  const p = document.createElement('p');
+  p.textContent = 'Developed with ♥ by ';
 
-  footer.appendChild(div);
+  const a = document.createElement('a');
+  a.textContent = 'Gospodin Dimitrov';
+  a.href = 'https://github.com/GDimitroff';
+  a.target = '_blank';
+
+  p.appendChild(a);
+  footer.appendChild(p);
 
   return footer;
 }

@@ -13,7 +13,6 @@ function init() {
   header.appendChild(navbar);
 
   const main = document.createElement('main');
-  main.classList.add('main');
   const homePage = createHome();
   main.appendChild(homePage);
 

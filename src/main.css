@@ -16,13 +16,19 @@ html {
   font-size: 62.5%;
 }
 
+/* font-family: 'Herr Von Muellerhoff', cursive; */
+
 body {
+  min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Herr Von Muellerhoff', cursive; */
   font-size: 1.6rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
 }
 
-header {
+header,
+footer {
   background-color: var(--primary-dark);
 }
 
@@ -57,4 +63,26 @@ li > a:hover,
 li > a:active {
   color: var(--primary-gold);
   border-bottom: 3px solid var(--primary-gold);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-light);
+  font-size: 1.2rem;
+  padding: 2rem 0;
+  border-top: 5px solid var(--primary-gold);
+}
+
+footer a:link,
+footer a:visited {
+  text-decoration: none;
+  color: var(--primary-gold);
+  transition: 0.2s ease-in-out;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
 }
