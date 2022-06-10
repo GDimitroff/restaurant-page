@@ -24,11 +24,13 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
+  background-color: var(--primary-dark);
 }
 
 header,
 footer {
   background-color: var(--primary-dark);
+  animation: 0.7s fade-in;
 }
 
 nav {
@@ -76,6 +78,7 @@ main {
   background-position: center;
   background-size: cover;
   backdrop-filter: var(--primary-dark);
+  animation: 0.7s fade-in;
 }
 
 .home {
@@ -83,6 +86,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: 1s fade-in;
 }
 
 .home > p:first-of-type {
@@ -130,6 +134,7 @@ button:active {
 
 .menu {
   max-width: 900px;
+  animation: 1s fade-in;
 }
 
 .cards {
@@ -195,4 +200,13 @@ footer a:visited {
 footer a:hover,
 footer a:active {
   text-decoration: underline;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
