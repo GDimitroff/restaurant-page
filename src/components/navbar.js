@@ -1,6 +1,7 @@
 import setActiveLink from '../helpers/setActiveLink';
 import loadHome from '../modules/home';
 import loadMenu from '../modules/menu';
+import loadAbout from '../modules/about';
 
 function createNavbar() {
   const nav = document.createElement('nav');
@@ -37,6 +38,13 @@ function createNavbar() {
   aboutLink.href = '#';
   aboutLink.textContent = 'About';
   aboutButton.appendChild(aboutLink);
+
+  aboutButton.addEventListener('click', (e) => {
+    if (e.target.classList.contains('active')) return;
+
+    setActiveLink(aboutLink);
+    loadAbout();
+  });
 
   ul.append(homeButton, menuButton, aboutButton);
   nav.appendChild(ul);

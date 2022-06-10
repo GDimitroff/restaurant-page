@@ -44,10 +44,10 @@ function createMenu() {
 
 function loadMenu() {
   const main = document.querySelector('main');
-  const home = createMenu();
+  const menu = createMenu();
 
   main.innerHTML = '';
-  main.appendChild(home);
+  main.appendChild(menu);
 }
 
 export default loadMenu;
