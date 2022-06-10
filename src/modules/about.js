@@ -1,6 +1,4 @@
-// Photo by Kobby Mendez on Unsplash
-// Photo by Aliona Gumeniuk on Unsplash
-// Photo by Dahiana Waszaj on Unsplash
-// Photo by Mae Mu on Unsplash
-// Photo by Jordane Mathieu on Unsplash
-// Photo by Dennis Klein on Unsplash
+// Photo by Silvia Mc Donald on Unsplash - desserts
+// Photo by Sérgio Alves Santos on Unsplash - drinks
+// Photo by Jennifer Pallian on Unsplash - Dishes
+// Photo by Marek Piwnicki on Unsplash

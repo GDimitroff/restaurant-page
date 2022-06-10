@@ -1,26 +1,30 @@
 import createCard from '../components/card';
-import image1 from '../assets/imgs/1.jpg';
+import dishesImage from '../assets/imgs/dishes.jpg';
+import drinksImage from '../assets/imgs/drinks.jpg';
+import dessertsImage from '../assets/imgs/desserts.jpg';
+import specialImage from '../assets/imgs/special.jpg';
 
-const featured = [
+const categories = [
   {
     name: 'Dishes',
-    description: 'Just one drink and go home!',
-    imgUrl: image1,
+    description: 'Careful! Everything is delicious...',
+    imgUrl: dishesImage,
   },
   {
     name: 'Drinks',
-    description: 'Delicious food!',
-    imgUrl: image1,
+    description: 'Just one drink and we go home. Yeah, right!',
+    imgUrl: drinksImage,
   },
   {
-    name: 'Dessert',
-    description: 'Cake is so awesome!',
-    imgUrl: image1,
+    name: 'Desserts',
+    description:
+      'This is the big deal. Prepare yourself for the ultimate pleasure!',
+    imgUrl: dessertsImage,
   },
   {
     name: 'Special',
-    description: 'Just one drink and go home!',
-    imgUrl: image1,
+    description: 'Let us surprise you...',
+    imgUrl: specialImage,
   },
 ];
 
@@ -30,7 +34,7 @@ function createMenu() {
 
   const cards = document.createElement('div');
   cards.classList.add('cards');
-  featured.forEach((item) => {
+  categories.forEach((item) => {
     cards.appendChild(createCard(item));
   });
 

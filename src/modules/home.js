@@ -10,7 +10,7 @@ function createHome() {
   const hr = document.createElement('hr');
 
   const pDescription = document.createElement('p');
-  pDescription.textContent = 'Taste the passion and forget about everything!';
+  pDescription.textContent = 'Taste the passion and surrender to pleasure!';
 
   const button = document.createElement('button');
   button.textContent = 'Menu';

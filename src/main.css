@@ -1,6 +1,7 @@
 :root {
   --primary-light: #f1f5f9;
   --primary-dark: #111827;
+  --secondary-dark: #1f2937;
   --primary-gold: #c59d5f;
 }
 
@@ -128,7 +129,7 @@ button:active {
 }
 
 .menu {
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .cards {
@@ -141,19 +142,22 @@ button:active {
   display: flex;
   gap: 18px;
   background-color: var(--primary-dark);
-  border-bottom: 5px solid transparent;
+  border-right: 5px solid transparent;
   border-radius: 1px;
   transition: 0.4s ease-in-out;
   cursor: pointer;
 }
 
 .card:hover {
-  border-bottom: 5px solid var(--primary-gold);
+  border-right: 5px solid var(--primary-gold);
+  background-color: var(--secondary-dark);
 }
 
 .card--image img {
   display: block;
-  width: 160px;
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
 }
 
 .card--content {
