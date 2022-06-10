@@ -1,7 +1,7 @@
 import './main.css';
 import createHeader from './components/header';
 import createFooter from './components/footer';
-import setActiveButton from './helpers/setActiveButton';
+import setActiveLink from './helpers/setActiveLink';
 import loadHome from './modules/home';
 
 function init() {
@@ -15,7 +15,7 @@ function init() {
   body.appendChild(main);
   body.appendChild(footer);
 
-  setActiveButton(document.querySelector('nav a'));
+  setActiveLink(document.querySelector('nav a'));
   loadHome();
 }
 

@@ -1,5 +1,5 @@
 function createHome() {
-  const section = document.createElement('div');
+  const section = document.createElement('section');
   section.classList.add('home');
 
   const p = document.createElement('p');

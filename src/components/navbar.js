@@ -1,4 +1,6 @@
+import setActiveLink from '../helpers/setActiveLink';
 import loadHome from '../modules/home';
+import loadMenu from '../modules/menu';
 
 function createNavbar() {
   const nav = document.createElement('nav');
@@ -13,7 +15,7 @@ function createNavbar() {
   homeButton.addEventListener('click', (e) => {
     if (e.target.classList.contains('active')) return;
 
-    setActiveButton(homeLink);
+    setActiveLink(homeLink);
     loadHome();
   });
 
@@ -22,6 +24,13 @@ function createNavbar() {
   menuLink.href = '#';
   menuLink.textContent = 'Menu';
   menuButton.appendChild(menuLink);
+
+  menuButton.addEventListener('click', (e) => {
+    if (e.target.classList.contains('active')) return;
+
+    setActiveLink(menuLink);
+    loadMenu();
+  });
 
   const aboutButton = document.createElement('li');
   const aboutLink = document.createElement('a');
