@@ -70,7 +70,7 @@ main {
   align-items: center;
 
   padding: 2rem;
-  background: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.7)),
+  background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)),
     url('./assets/imgs/olympen-content.jpg');
   background-position: center;
   background-size: cover;
@@ -88,7 +88,6 @@ main {
   font-family: 'Herr Von Muellerhoff', cursive;
   color: var(--primary-gold);
   font-size: 9.6rem;
-  text-transform: capitalize;
 }
 
 .home > h1 {
@@ -126,6 +125,50 @@ button {
 button:hover,
 button:active {
   color: var(--primary-light);
+}
+
+.menu {
+  max-width: 800px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.card {
+  display: flex;
+  gap: 18px;
+  background-color: var(--primary-dark);
+  border-bottom: 5px solid transparent;
+  border-radius: 1px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-bottom: 5px solid var(--primary-gold);
+}
+
+.card--image img {
+  display: block;
+  width: 160px;
+}
+
+.card--content {
+  padding: 1rem;
+}
+
+.card-title {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-size: 7.8rem;
+  color: var(--primary-gold);
+}
+
+.card-description {
+  color: var(--primary-light);
+  font-size: 1.6rem;
 }
 
 footer {
