@@ -1,16 +1,16 @@
 function createFooter() {
   const footer = document.createElement('footer');
 
-  const p = document.createElement('p');
-  p.textContent = 'Developed with ♥ by ';
+  const copyright = document.createElement('p');
+  copyright.textContent = 'Developed with ♥ by ';
 
-  const a = document.createElement('a');
-  a.textContent = 'Gospodin Dimitrov';
-  a.href = 'https://github.com/GDimitroff';
-  a.target = '_blank';
+  const githubLink = document.createElement('a');
+  githubLink.textContent = 'Gospodin Dimitrov';
+  githubLink.href = 'https://github.com/GDimitroff';
+  githubLink.target = '_blank';
 
-  p.appendChild(a);
-  footer.appendChild(p);
+  copyright.appendChild(githubLink);
+  footer.appendChild(copyright);
 
   return footer;
 }

@@ -23,6 +23,8 @@ function createHome() {
 function loadHome() {
   const main = document.querySelector('main');
   const home = createHome();
+
+  main.innerHTML = '';
   main.appendChild(home);
 }
 

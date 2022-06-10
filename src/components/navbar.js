@@ -1,26 +1,35 @@
+import loadHome from '../modules/home';
+
 function createNavbar() {
   const nav = document.createElement('nav');
   const ul = document.createElement('ul');
 
-  const liHome = document.createElement('li');
-  const aHome = document.createElement('a');
-  aHome.href = '#';
-  aHome.textContent = 'Home';
-  liHome.appendChild(aHome);
+  const homeButton = document.createElement('li');
+  const homeLink = document.createElement('a');
+  homeLink.href = '#';
+  homeLink.textContent = 'Home';
+  homeButton.appendChild(homeLink);
 
-  const liMenu = document.createElement('li');
-  const aMenu = document.createElement('a');
-  aMenu.href = '#';
-  aMenu.textContent = 'Menu';
-  liMenu.appendChild(aMenu);
+  homeButton.addEventListener('click', (e) => {
+    if (e.target.classList.contains('active')) return;
 
-  const liAbout = document.createElement('li');
-  const aAbout = document.createElement('a');
-  aAbout.href = '#';
-  aAbout.textContent = 'About';
-  liAbout.appendChild(aAbout);
+    setActiveButton(homeLink);
+    loadHome();
+  });
 
-  ul.append(liHome, liMenu, liAbout);
+  const menuButton = document.createElement('li');
+  const menuLink = document.createElement('a');
+  menuLink.href = '#';
+  menuLink.textContent = 'Menu';
+  menuButton.appendChild(menuLink);
+
+  const aboutButton = document.createElement('li');
+  const aboutLink = document.createElement('a');
+  aboutLink.href = '#';
+  aboutLink.textContent = 'About';
+  aboutButton.appendChild(aboutLink);
+
+  ul.append(homeButton, menuButton, aboutButton);
   nav.appendChild(ul);
 
   return nav;
