@@ -28,7 +28,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
-  
+
   background-color: var(--primary-dark);
 }
 
@@ -209,7 +209,7 @@ button:active {
 }
 
 .about > .map img {
-  width: 100%;
+  width: 95%;
   border-radius: 1px;
 }
 
