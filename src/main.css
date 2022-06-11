@@ -180,6 +180,30 @@ button:active {
   font-size: 1.6rem;
 }
 
+.about {
+  color: var(--primary-light);
+  background: var(--primary-dark);
+  border-radius: 1px;
+  padding: 2rem;
+  text-align: center;
+  animation: 1s fade-in;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-info > h1 {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-size: 7.6rem;
+  color: var(--primary-gold);
+}
+
+.about > .map img {
+  max-width: 800px;
+  border-radius: 1px;
+}
+
 footer {
   display: flex;
   justify-content: center;
