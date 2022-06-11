@@ -1,4 +1,4 @@
-## Project: Restaurant Page
+### Project: [Restaurant Page](https://restaurant-gdimitrov.netlify.app/)
 
 Practicing DOM manipulation by dynamically rendering a simple restaurant page. I am using JavaScript alone to generate the entire contents of the website. The project is from The Odin Project [curriculum](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page).
 
