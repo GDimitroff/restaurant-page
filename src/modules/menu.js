@@ -18,7 +18,7 @@ const categories = [
   {
     name: 'Desserts',
     description:
-      'This is the big deal. Prepare yourself for the ultimate pleasure!',
+      'Prepare yourself for the ultimate pleasure!',
     imgUrl: dessertsImage,
   },
   {

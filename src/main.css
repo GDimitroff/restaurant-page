@@ -15,15 +15,20 @@
 
 html {
   font-size: 62.5%;
+  height: -webkit-fill-available;
 }
 
 body {
   min-height: 100vh;
+  min-height: -webkit-fill-available;
+
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
+
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
+  
   background-color: var(--primary-dark);
 }
 
@@ -199,8 +204,12 @@ button:active {
   color: var(--primary-gold);
 }
 
+.about {
+  max-width: 900px;
+}
+
 .about > .map img {
-  max-width: 800px;
+  width: 100%;
   border-radius: 1px;
 }
 
@@ -232,5 +241,73 @@ footer a:active {
   }
   100% {
     opacity: 1;
+  }
+}
+
+/************************************/
+/* BELOW 1200px (Landscape Tablets) */
+/************************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/************************************/
+/* BELOW 940px (Tablets)            */
+/************************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .cards {
+    gap: 18px;
+  }
+
+  .card--image img {
+    width: 120px;
+    height: 180px;
+  }
+}
+
+/************************************/
+/* BELOW 704px (Smaller Tablets)    */
+/************************************/
+
+@media (max-width: 44em) {
+  .menu {
+    width: 80%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .card--image img {
+    width: 170px;
+    height: 140px;
+  }
+}
+
+/************************************/
+/* BELOW 544px (Phones)             */
+/************************************/
+
+@media (max-width: 34em) {
+  .menu {
+    width: 90%;
+  }
+
+  .card-title {
+    font-size: 4.8rem;
+  }
+
+  .card--image img {
+    width: 120px;
+    height: 100px;
   }
 }
